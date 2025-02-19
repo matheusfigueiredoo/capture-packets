@@ -13,6 +13,8 @@ def capture_and_save(interface, capture_filter, output_file):
     capture = pyshark.LiveCapture(interface=interface, display_filter=capture_filter)
     packets_data = []
 
+    # comentario
+
     for packet in capture.sniff_continuously():
         try:
             packet_info = {}
